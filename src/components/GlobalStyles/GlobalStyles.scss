@@ -1,8 +1,26 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+:root {
+    --primary-color: rgba(254, 44, 85, 1);
+    --hover-color: rgba(22, 24, 35, 0.03);
+    --text-color: rgba(125, 127, 143, 1);
+
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+a {
+    all: unset;
+    cursor: pointer;
 }
 
 html {
@@ -14,4 +32,18 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 22px;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
 }

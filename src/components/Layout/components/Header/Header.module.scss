@@ -1,0 +1,43 @@
+.wrapper {
+    height: var(--default-layout-header-height);
+    width: 100%;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+}
+
+.inner {
+    width: var(--default-layout-width);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > .logo {
+        height: 42px;
+    }
+
+    & > .actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .action-btn {
+            font-size: 2.2rem;
+            color: #161823;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.more-btn {
+    font-size: 2rem;
+    // margin-left: 24px;
+}
